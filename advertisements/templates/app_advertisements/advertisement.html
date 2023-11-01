@@ -58,7 +58,7 @@
 
   <div class="container" style="margin: 50px;">
     <div class="display-2">
-      <span class="badge bg-primary">Объявление пользователя {{ adv.user }}</span>
+      <span class="badge bg-primary">Объявление пользователя {{ user }}</span>
     </div>
   </div>
   <div class="col offset-2">
@@ -72,14 +72,14 @@
         <div class="col">
           <div class="card-body">
             <h5 class="card-title">
-              <a href="#" class="nav-link"><strong>{{ adv.title }}</strong></a>
+              <a href="#" class="nav-link"><strong>{{ advertisement.title }}</strong></a>
             </h5>
             <p class="card-text">
-              {{ adv.description }}
+              {{ advertisement.description }}
             </p>
-            <span>Автор: {{ adv.user }}</span>
-            <p class="card-text"><small class="text-muted">Размещено: {{ adv.created_at }}</small></p>
-              <span>Цена: {{ adv.price }}</span>
+            <span>Автор: {{ user }}</span>
+            <p class="card-text"><small class="text-muted">Размещено: {{ advertisement.created_at }}</small></p>
+              <span>Цена: {{ advertisement.price }}</span>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
               aria-expanded="false">хотите</a>
-           <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
               <a class="dropdown-item" href="#">например</a>
               <a class="dropdown-item" href="#">ссылки на социальные сети</a>
             </div>
